@@ -1,1 +1,1 @@
-web : gunicorn StoryPost.wsgi --log-file -
+web: gunicorn StoryPost.wsgi --log-file -
