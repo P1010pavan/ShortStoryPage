@@ -48,7 +48,7 @@ def index5(request):
             return redirect('/')
     else:
         form = AuthenticationForm()
-    return render(request, 'Signin.html/', {'form': form})
+    return render(request, 'signin.html/', {'form': form})
 
 def index6(request):
     form = SignUpForm(request.POST)
@@ -66,7 +66,7 @@ def index6(request):
             return redirect('/')
     else:
         form = SignUpForm()
-    return render(request,'SignUp.html',{'form':form})
+    return render(request,'signup.html',{'form':form})
 
 def index7(request):
     logout(request)
