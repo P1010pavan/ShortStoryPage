@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>ShortStoryPage.com</title>
+
+  </head>
+  {% load static %}
+        <style>
+.navbar{
+margin:0.2%;
+padding:auto;
+height: 55px;
+
+}
+.nav-link{
+font-size: 20px;
+font-weight: thin;
+ font-family: Gadget, sans-serif;
+ padding-left:30px;
+  padding-right:30px;
+  margin-left:30px;
+  margin-right:30px;
+}
+.navbar-brand{
+font-size: 20px;
+font-weight: thin;
+font-family: Gadget, sans-serif;
+
+}
+.card{
+margin:0.3%;
+}
+.card-img{
+height:50%;
+}
+.navbar1{
+margin:0.3%;
+padding:3%;
+}
+.btn{
+  margin: 15%;
+  width: 30%;
+  padding:10px;
+}
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+
+}
+.modal-title{
+color:#00ff00;
+font-weight:bold;
+}
+.acc{
+color:#00ff00;
+font-weight:bold;
+}
+.modal-header{
+background-color:black;
+font-weight:bold;
+}
+.modal-body{
+background-color:black;
+font-weight:bold;
+}
+
+  </style>
+  <body>
+<div class="WebContainer">
+  <nav class="navbar navbar-expand-lg  navbar-primary " style="background-color:#000000">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav m-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index1.html">Stories</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="uploadpage.html/">Upload</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="signup.html/">Sign Up</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="signin.html/">Sign In</a>
+      </li>
+
+     <li class="nav-item active">
+  <a class="nav-link" style="color:#3377ff;" data-toggle="modal" data-target="#myModal">
+  Account</a>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Account</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h5 class="acc">Username : {{ request.user.username }}</h5>
+        </div>
+
+         <div class="modal-body">
+           <h5 class="acc">Email  : {{ request.user.email }}</h5>
+         </div>
+      </div>
+    </div>
+  </div>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="contactus.html/">Contact Us</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="aboutus.html/">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="card text-center">
+  <img src="{% static 'test3.jpg' %}" style="width:100%;height:650px;">
+  <div class="card-img-overlay">
+    <a href="index1.html/" class="btn" style="background-color: #00cc00;"><h4>Stories---></h4></a>
+  </div>
+</div>
+  <nav class="navbar1 navbar-expand-lg navbar-
+   none" style="background-color:#000000;">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav m-auto">
+
+
+
+
+<ul class="nav flex-column ">
+  <li class="nav-item">
+    <a class="nav-link active" href="contactus.html/">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="aboutus.html/">About Us</a>
+  </li>
+</ul>
+
+      <ul>
+  <li class="nav-item">
+    <a class="nav-link active" href="termsandconditions.html/">Terms&Conditions</a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link active" href="privacyandpolicy.html/">PrivacyPolicy</a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
