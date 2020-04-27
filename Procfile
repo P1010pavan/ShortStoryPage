@@ -1,0 +1,1 @@
+web : gunicorn StoryPost.wsgi --log_file -
